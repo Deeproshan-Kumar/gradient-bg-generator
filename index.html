@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicons/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="favicons/android-chrome-512x512.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-touch-icon.png"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gradient Background Generator" />
+    <meta
+      property="og:description"
+      content="Generate beautiful background colors online and free."
+    />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="app" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Gradient Background Generator" />
+    <meta
+      name="twitter:description"
+      content="Generate beautiful background colors online and free."
+    />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:site" content="" />
+
+    <title>Gradient Background Generator</title>
+  </head>
+  <body>
+    <main>
+      <header class="header" id="header">
+        <nav class="nav" id="nav">
+          <a href="#" class="logo" id="logo">Gradient</a>
+          <ul class="menus" id="menus">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="section" id="section">
+        <div class="app" id="app">
+          <div class="container">
+            <div class="app-info">
+              <h1>Gradient Maker</h1>
+              <p>Create awesome gradient colors.</p>
+            </div>
+            <div class="panels">
+              <div class="panel left-panel">
+                <div class="controls">
+                  <div class="control">
+                    <label for="color1">Color 1</label>
+                    <div>
+                      <span class="color-code" id="color-code-1"></span>
+                      <input type="color" name="color1" id="color1" />
+                    </div>
+                    <input
+                      type="range"
+                      class="range-slider"
+                      value="0"
+                      min="0"
+                      max="100"
+                      name="position_1"
+                      id="position_1"
+                    />
+                  </div>
+                  <div class="control">
+                    <label for="color2">Color 2</label>
+                    <div>
+                      <span class="color-code" id="color-code-2"></span>
+                      <input type="color" name="color2" id="color2" />
+                    </div>
+                    <input
+                      type="range"
+                      class="range-slider"
+                      value="0"
+                      min="0"
+                      max="100"
+                      name="position_2"
+                      id="position_2"
+                    />
+                  </div>
+                  <div class="control">
+                    <label for="rotation">Rotation</label>
+                    <div>
+                      <select name="rotation" id="rotation">
+                        <option value="0">0°</option>
+                        <option value="45">45°</option>
+                        <option value="90">90°</option>
+                        <option value="135">135°</option>
+                        <option value="180">180°</option>
+                        <option value="225">225°</option>
+                        <option value="270">270°</option>
+                        <option value="315">315°</option>
+                        <option value="360">360°</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="control">
+                    <label for="type">Gradient Type</label>
+                    <div>
+                      <select name="type" id="type">
+                        <option value="linear">Linear</option>
+                        <option value="radial">Radial</option>
+                        <option value="conic">Conic</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-footer">
+                  <button
+                    class="button generate-gradient-btn"
+                    id="generate-gradient-btn"
+                  >
+                    Generate
+                  </button>
+                  <button class="button copy-css" id="copy-css">
+                    Copy CSS
+                  </button>
+                </div>
+                <div class="code" id="code">
+                  <label for="css-code">Customize Code</label>
+                  <textarea
+                    name="css-code"
+                    class="css-code"
+                    id="css-code"
+                    rows="5"
+                    cols="30"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="panel right-panel">
+                <div class="output" id="output">
+                  <button class="full-screen" id="full-screen"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>
